@@ -205,4 +205,13 @@ class VertBiSideBarView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : VertBiSideBarView {
+            val view : VertBiSideBarView = VertBiSideBarView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
