@@ -33,7 +33,7 @@ fun Canvas.drawVertBiSideBar(scale : Float, w : Float, h : Float, paint : Paint)
     save()
     translate(w / 2, h / 2)
     save()
-    translate(h / 2, 0f)
+    translate(0f, h / 2)
     drawRect(RectF(-size / 2, -h * sf1, size / 2, 0f), paint)
     restore()
     for (j in 0..1) {
